@@ -1,4 +1,4 @@
-# to spped thing up install libmamba solver as follows:
+# to speed thing up install libmamba solver as follows:
 # 1. conda update -n base conda
 # 2. conda install -n base conda-libmamba-solver
 #-------------------------------------------New Method--------------------------------------------
