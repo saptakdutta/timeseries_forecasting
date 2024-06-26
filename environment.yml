@@ -1,0 +1,46 @@
+# to spped thing up install libmamba solver as follows:
+# 1. conda update -n base conda
+# 2. conda install -n base conda-libmamba-solver
+#-------------------------------------------New Method--------------------------------------------
+# 1. Install conda-lock on your base environment: 
+#    > conda install --channel=conda-forge --name=base conda-lock
+# 2. Activate conda: 
+#    > e.g, conda activate
+# 3. Use the provided lock file to generate an exact replica of the target environment: 
+#    > conda-lock install --n env_name_here conda-lock.yml
+# 4. To remove this environment use: 
+#    > conda remove -n env_name_here --all 
+# ------------------------------------------Old Method--------------------------------------------
+# 1. to create this venv run: conda env create -f environment.yml --solver=libmamba || mamba env create -f environment.yml
+# 2. to destroy this venv run: conda remove -n env_name_here --all || mamba remove -n env_name_here --all
+
+name: timeseries_forecast
+channels:
+- nodefaults
+- conda-forge
+dependencies:
+- python
+# Conda dependencies go here
+- pandas
+- numpy
+- matplotlib
+- pyarrow
+- pip
+- conda-lock
+# Pip dependencies go here
+- pip:
+# Install the basic pip goodies for REPL, code formatting, type checking/hints, pretty printing loops & tables etc
+  - black
+  - mypy
+  - tqdm
+  - ipykernel
+  - tabulate
+  - sqlmodel
+# Project related dependencies go here
+  - datetime
+  - scikit-learn
+platforms:
+  - linux-64
+  - osx-64
+  - osx-arm64
+  - win-64
