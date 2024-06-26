@@ -10,6 +10,8 @@
    > conda-lock install --n env_name_here conda-lock.yml
 4. To remove this environment use: 
    > conda remove -n env_name_here --all 
+
+
 ------------------------------------------Old Method--------------------------------------------
 1. to create this venv run: conda env create -f environment.yml --solver=libmamba || mamba env create -f environment.yml
 2. to destroy this venv run: conda remove -n env_name_here --all || mamba remove -n env_name_here --all
