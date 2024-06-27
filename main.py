@@ -26,6 +26,6 @@ predictions = sf.predict(h=96, level=[75])
 predictions.plot(x="ds", y="AutoARIMA")
 
 # %% Examine with sample data
-df[0:48].plot(x="ds", y="y")
+df[0:152].plot(x="ds", y="y")
 
 # %%
