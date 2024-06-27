@@ -7,7 +7,7 @@
 # 2. Activate conda: 
 #    > e.g, conda activate
 # 3. Use the provided lock file to generate an exact replica of the target environment: 
-#    > conda-lock install --n env_name_here conda-lock.yml
+#    > conda-lock install -n env_name_here conda-lock.yml
 # 4. To remove this environment use: 
 #    > conda remove -n env_name_here --all 
 # ------------------------------------------Old Method--------------------------------------------
