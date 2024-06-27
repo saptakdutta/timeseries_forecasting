@@ -12,6 +12,7 @@ df = pd.read_csv("pjm_hourly_est.csv").rename(
     columns={"Datetime": "ds", "PJM_Load": "y"}
 )
 df["unique_id"] = "A1"
+df = df[0:32895]
 df
 
 # %% Set parameters
