@@ -14,7 +14,7 @@
 # 1. to create this venv run: conda env create -f environment.yml --solver=libmamba || mamba env create -f environment.yml
 # 2. to destroy this venv run: conda remove -n env_name_here --all || mamba remove -n env_name_here --all
 
-name: timeseries_forecast
+name: timeseries_forecasting
 channels:
 - nodefaults
 - conda-forge
